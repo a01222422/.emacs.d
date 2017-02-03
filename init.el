@@ -16,6 +16,8 @@
 (add-hook 'latex-mode-hook 'outline-minor-mode)
 (setq outline-minor-mode-prefix "\C-c \C-o") ; Or something else
 
+(setq-default indent-tabs-mode nil)
+
 ;; GUI-only settings
 (when window-system
   (progn
@@ -140,7 +142,7 @@
   :no-require t
   :disabled t)
 
-(load-theme 'gotham)
+(load-theme 'afternoon)
 
 
 (put 'dired-find-alternate-file 'disabled nil)
@@ -152,7 +154,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (powerline auctex emmet-mode emmet paren-face beacon which-key use-package try noctilux-theme nlinum magit gotham-theme evil afternoon-theme))))
+    (yaml-mode powerline auctex emmet-mode emmet paren-face beacon which-key use-package try noctilux-theme nlinum magit gotham-theme evil afternoon-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
