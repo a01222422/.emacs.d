@@ -140,7 +140,13 @@
   :no-require t
   :disabled t)
 
-(load-theme 'gotham)
+(use-package silkworm-theme
+  :if window-system
+  :ensure t
+  :no-require t
+  :disabled t)
+
+(load-theme 'noctilux)
 
 
 (put 'dired-find-alternate-file 'disabled nil)
@@ -150,9 +156,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#292929" "#ff3333" "#aaffaa" "#aaeecc" "#aaccff" "#FF1F69" "#aadddd" "#999999"])
+ '(background-color "#202020")
+ '(background-mode dark)
+ '(cursor-color "#cccccc")
+ '(foreground-color "#cccccc")
  '(package-selected-packages
    (quote
-    (powerline auctex emmet-mode emmet paren-face beacon which-key use-package try noctilux-theme nlinum magit gotham-theme evil afternoon-theme))))
+    (tronesque-theme yaml-mode silkworm-theme powerline auctex emmet-mode emmet paren-face beacon which-key use-package try noctilux-theme nlinum magit gotham-theme evil afternoon-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
