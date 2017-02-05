@@ -1,0 +1,68 @@
+% -*- coding: utf-8 -*-
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{float}
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+\title{Title}
+\author{Pablo Muñoz Haro A01222422}
+\date{\today}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+\begin{document}
+\begin{titlepage}
+  \centering
+  \vspace*{0.5 cm}
+  \includegraphics[scale = 0.55]{C:/Users/pablo/AppData/Roaming/.emacs.d/latex/teclogo.png}\\[1.0 cm]
+  %\textsc{\LARGE }\\[2.0 cm]
+  \textsc{\Large Subject}\\[0.5 cm]
+  \rule{\linewidth}{0.2 mm} \\[0.4 cm]
+  { \huge \bfseries \thetitle}\\
+  \rule{\linewidth}{0.2 mm} \\[1.5 cm]
+  
+  \begin{minipage}{0.4\textwidth}
+    \begin{flushleft} \large
+      \emph{Profesor:}\\
+      Profesor\\
+    \end{flushleft}
+  \end{minipage}~
+  \begin{minipage}{0.4\textwidth}
+    
+    \begin{flushright} \large
+      \emph{Autor :} \\
+      Pablo Muñoz Haro\\
+      A01222422
+    \end{flushright}
+    
+  \end{minipage}\\[2 cm]
+  
+  
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\tableofcontents
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+\end{document}

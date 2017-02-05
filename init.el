@@ -16,6 +16,8 @@
 (add-hook 'latex-mode-hook 'outline-minor-mode)
 (setq outline-minor-mode-prefix "\C-c \C-o") ; Or something else
 
+(setq-default indent-tabs-mode nil)
+
 ;; GUI-only settings
 (when window-system
   (progn
@@ -140,6 +142,7 @@
   :no-require t
   :disabled t)
 
+<<<<<<< HEAD
 (use-package silkworm-theme
   :if window-system
   :ensure t
@@ -147,6 +150,9 @@
   :disabled t)
 
 (load-theme 'noctilux)
+=======
+(load-theme 'afternoon)
+>>>>>>> 65afba5dde29206a7d553e1ba7708b4dda6f8b9c
 
 
 (put 'dired-find-alternate-file 'disabled nil)
@@ -164,7 +170,11 @@
  '(foreground-color "#cccccc")
  '(package-selected-packages
    (quote
+<<<<<<< HEAD
     (tronesque-theme yaml-mode silkworm-theme powerline auctex emmet-mode emmet paren-face beacon which-key use-package try noctilux-theme nlinum magit gotham-theme evil afternoon-theme))))
+=======
+    (yaml-mode powerline auctex emmet-mode emmet paren-face beacon which-key use-package try noctilux-theme nlinum magit gotham-theme evil afternoon-theme))))
+>>>>>>> 65afba5dde29206a7d553e1ba7708b4dda6f8b9c
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
