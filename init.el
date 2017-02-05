@@ -142,18 +142,19 @@
   :no-require t
   :disabled t)
 
-<<<<<<< HEAD
 (use-package silkworm-theme
   :if window-system
   :ensure t
   :no-require t
   :disabled t)
 
-(load-theme 'noctilux)
-=======
-(load-theme 'afternoon)
->>>>>>> 65afba5dde29206a7d553e1ba7708b4dda6f8b9c
+(use-package tronesque-theme
+  :if window-system
+  :ensure t
+  :no-require t
+  :disabled t)
 
+(load-theme 'tronesque)
 
 (put 'dired-find-alternate-file 'disabled nil)
 
@@ -167,14 +168,7 @@
  '(background-color "#202020")
  '(background-mode dark)
  '(cursor-color "#cccccc")
- '(foreground-color "#cccccc")
- '(package-selected-packages
-   (quote
-<<<<<<< HEAD
-    (tronesque-theme yaml-mode silkworm-theme powerline auctex emmet-mode emmet paren-face beacon which-key use-package try noctilux-theme nlinum magit gotham-theme evil afternoon-theme))))
-=======
-    (yaml-mode powerline auctex emmet-mode emmet paren-face beacon which-key use-package try noctilux-theme nlinum magit gotham-theme evil afternoon-theme))))
->>>>>>> 65afba5dde29206a7d553e1ba7708b4dda6f8b9c
+ '(foreground-color "#cccccc"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
