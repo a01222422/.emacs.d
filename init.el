@@ -1,3 +1,5 @@
+;; Pablo Muñoz personal emacs configuration
+
 ;; Quality of life
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
